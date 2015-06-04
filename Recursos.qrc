@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/cesped_a.png</file>
+        <file>resources/cesped_b.png</file>
+        <file>resources/cortadora.jpg</file>
+        <file>resources/inicio.png</file>
+        <file>resources/obstaculo.png</file>
+        <file>resources/carpeta.png</file>
+        <file>resources/floppy.png</file>
+        <file>resources/salir.png</file>
+        <file>resources/A.png</file>
+        <file>resources/B.png</file>
+        <file>resources/archivo.png</file>
+        <file>resources/informacion.png</file>
+    </qresource>
+</RCC>

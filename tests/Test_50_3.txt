@@ -1,0 +1,9 @@
+---===RESULTADOS DE LAS PRUEBAS===---
+
+Porcentaje de césped cortado: 99.8045%
+Número de iteraciones realizadas:
+-Cortar todo el césped: 4084
+-Corte camino entre 2 puntos: 55
+Tiempo transcurrido:
+-Cortar todo el césped: 1388ms
+-Corte camino entre 2 puntos: 2ms

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>640</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>IA - Búsqueda</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Recursos.qrc">
+    <normaloff>:/resources/cortadora.jpg</normaloff>:/resources/cortadora.jpg</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>306</width>
+         <height>419</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QFrame" name="gridLayout_3">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <property name="spacing">
+            <number>0</number>
+           </property>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>6</number>
+      </property>
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMinimumSize</enum>
+      </property>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Minimapa&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGraphicsView" name="graphicsView">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="cbEdicion">
+        <property name="text">
+         <string>Modo Edición</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="fEditar">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="3" column="1">
+          <widget class="QLabel" name="lColumnas">
+           <property name="text">
+            <string>Columnas</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QSpinBox" name="sbColumnas">
+           <property name="minimum">
+            <number>5</number>
+           </property>
+           <property name="maximum">
+            <number>100</number>
+           </property>
+           <property name="value">
+            <number>5</number>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QSpinBox" name="sbFilas">
+           <property name="minimum">
+            <number>5</number>
+           </property>
+           <property name="maximum">
+            <number>100</number>
+           </property>
+           <property name="value">
+            <number>5</number>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="lFilas">
+           <property name="text">
+            <string>Filas</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QPushButton" name="bAleatorio">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>Aleatorio</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="fSimular">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="bSimular">
+           <property name="text">
+            <string>Cortar césped</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="bReset">
+           <property name="text">
+            <string>Reset</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0" colspan="2">
+          <widget class="QSlider" name="timeSlider">
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>1000</number>
+           </property>
+           <property name="value">
+            <number>500</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="tickPosition">
+            <enum>QSlider::NoTicks</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="bCamino">
+           <property name="text">
+            <string>Cortar segmento</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QPushButton" name="bPruebas">
+           <property name="text">
+            <string>Ejecutar pruebas</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>640</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionNuevo"/>
+    <addaction name="actionAbrir"/>
+    <addaction name="separator"/>
+    <addaction name="actionGuardar"/>
+    <addaction name="actionGuardar_como"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <widget class="QMenu" name="menuAcerca_de">
+    <property name="title">
+     <string>Ayuda</string>
+    </property>
+    <addaction name="actionAcerca_de"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuAcerca_de"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionSalir">
+   <property name="icon">
+    <iconset resource="Recursos.qrc">
+     <normaloff>:/resources/salir.png</normaloff>:/resources/salir.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionAcerca_de">
+   <property name="icon">
+    <iconset resource="Recursos.qrc">
+     <normaloff>:/resources/informacion.png</normaloff>:/resources/informacion.png</iconset>
+   </property>
+   <property name="text">
+    <string>Acerca de...</string>
+   </property>
+  </action>
+  <action name="actionAbrir">
+   <property name="icon">
+    <iconset resource="Recursos.qrc">
+     <normaloff>:/resources/carpeta.png</normaloff>:/resources/carpeta.png</iconset>
+   </property>
+   <property name="text">
+    <string>Abrir...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="icon">
+    <iconset resource="Recursos.qrc">
+     <normaloff>:/resources/floppy.png</normaloff>:/resources/floppy.png</iconset>
+   </property>
+   <property name="text">
+    <string>Guardar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionGuardar_como">
+   <property name="text">
+    <string>Guardar como...</string>
+   </property>
+  </action>
+  <action name="actionNuevo">
+   <property name="icon">
+    <iconset resource="Recursos.qrc">
+     <normaloff>:/resources/archivo.png</normaloff>:/resources/archivo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nuevo...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>scrollArea</tabstop>
+  <tabstop>cbEdicion</tabstop>
+  <tabstop>sbFilas</tabstop>
+  <tabstop>sbColumnas</tabstop>
+  <tabstop>bAleatorio</tabstop>
+  <tabstop>bSimular</tabstop>
+  <tabstop>bReset</tabstop>
+  <tabstop>bCamino</tabstop>
+  <tabstop>timeSlider</tabstop>
+  <tabstop>bPruebas</tabstop>
+ </tabstops>
+ <resources>
+  <include location="Recursos.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>cbEdicion</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>fEditar</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>367</x>
+     <y>346</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>408</x>
+     <y>363</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cbEdicion</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>fSimular</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>479</x>
+     <y>351</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>476</x>
+     <y>445</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
