@@ -7,6 +7,9 @@ Robot lawnmover simulator
 * Date: 28/10/2013
 
 ## Screenshots
+![Screenshot](screens/Pantallazov1.0.png)
+![Screenshot](screens/Pantallazov4.0.png)
+![Screenshot](screens/Pantallazov4.0_Heuristica.png)
 
 ## [Colaborators](https://github.com/alu0100694765/LawnmoverIA/graphs/contributors)
 Sawan Jagdish Kapai Harpalani. Contact: <alu0100694765@ull.edu.es>
